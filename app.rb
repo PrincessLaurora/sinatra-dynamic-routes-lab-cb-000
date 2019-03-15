@@ -26,6 +26,15 @@ class App < Sinatra::Base
     @subtract = params[:number1].to_i - params[:number2].to_i
     @multiply = params[:number1].to_i * params[:number2].to_i
     @divide = params[:number1].to_i / params[:number2].to_i
+    @operation  = params[:operation]
+    if @operation == "add"
+      @add
+    elsif @operation == "subtract"
+      @subtract
+    elsif @operation == "multiply"
+      @multiply
+    elsif @operation == "divide"
+      @divide
   end
 
 end
