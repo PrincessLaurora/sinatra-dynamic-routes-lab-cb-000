@@ -25,7 +25,7 @@ class App < Sinatra::Base
     @add = params[:number1] + params[:number2]
     @subtract = params[:number1] - params[:number2]
     @multiply = params[:number1] * params[:number2]
-    @divide = 
+    @divide = params[:number1] / params[:number2]
   end
 
 end
